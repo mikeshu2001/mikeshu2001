@@ -1,71 +1,97 @@
-# Mikhail Shumovsky
+# Mikhail Shumovsky / Михаил Шумовский
 
-**AI-native product builder · editor · marketer**
+**AI-native product builder · editor · marketer**<br>
+**Создаю продукты с ИИ-агентами · редактор · маркетолог**
 
-I design, build, and operate product systems where AI agents handle bounded
-parts of research, engineering, and content production. My background in
-editorial leadership and marketing shapes how I work: start with the user
-problem, make the process observable, and validate the output before shipping.
+**EN.** I build and operate products where AI agents take on clearly scoped
+stages of research, engineering, and content production. My job is to turn an
+open-ended goal into steps an agent can complete and a human can verify.
 
-## Selected public work
+**RU.** Я создаю и поддерживаю продукты, в которых ИИ-агенты выполняют
+четко ограниченные этапы исследования, разработки и подготовки контента. Моя
+задача — разбить общую цель на шаги, которые агент может выполнить, а человек —
+проверить.
+
+## Public work / Публичные проекты
 
 ### [Personal Brain Builder](https://github.com/mikeshu2001/personal-brain-builder)
 
-A beginner-guided toolkit for creating cross-project memory for file-capable AI
-assistants. It combines one main Agent Skill with scoped discovery, consent
-gates, structured memory cards, resumable state, validation, and reversible
-runner integration. A tested Python control plane handles deterministic state,
-card validation, and portable history.
+**EN.** A memory system stored on the user's computer. It lets AI assistants
+that can read and write files carry useful context between projects. Changes
+require explicit consent, pass validation, and can be rolled back. The Python
+tool that controls state has 81 tests for state transitions, crash recovery,
+concurrent access, unsafe paths, and rollback. GitHub Actions runs them on three
+Python versions.
+
+**RU.** Система памяти, которая хранится на компьютере пользователя. С ней
+ИИ-ассистент, умеющий читать и записывать файлы, переносит полезный контекст
+между проектами. Изменения требуют явного согласия, проходят проверку и
+поддерживают откат. У инструмента на Python, который управляет состоянием, — 81
+тест на переходы состояния, восстановление после сбоев, параллельный доступ,
+небезопасные пути и откат. GitHub Actions запускает их на трех версиях Python.
 
 ### [Content Factory](https://github.com/mikeshu2001/content-factory)
 
-A reusable Russian-language editorial system built as a small team of
-specialized agents. It separates research, planning, drafting, and editing;
-uses explicit editorial policies and examples; and keeps plan approval as a
-deliberate human checkpoint.
+**EN.** An editorial workflow whose roles, rules, and handoffs are described in
+Markdown. A researcher gathers sources, a planner prepares the structure, a
+human approves it, a writer drafts the text, and the main agent edits the
+result. Each stage leaves a file that the next stage can inspect. The repository
+also includes editorial policies and a reproducible 0–16 evaluation rubric.
 
-## Production systems
+**RU.** Редакционный процесс на Markdown и специализированных агентах.
+Исследователь собирает источники, планировщик готовит структуру, человек ее
+согласовывает, писатель создает черновик, а главный агент редактирует результат.
+Каждый этап оставляет файл, который можно проверить перед следующим. В
+репозитории также есть редполитики и воспроизводимая система оценки от 0 до 16.
 
-Most systems I operate are not public repositories. They include:
+## Production systems / Рабочие системы
 
-- an AI news aggregation and editorial moderation pipeline;
-- a Telegram secretary connected to task and spreadsheet workflows;
-- a financial research and briefing assistant;
-- social publishing and feedback automations.
+**EN.** Most systems I operate are private. They include an AI news aggregation
+and editorial moderation pipeline, a Telegram secretary connected to task and
+spreadsheet workflows, a financial research assistant, and social publishing
+automations.
 
-## How I work
+**RU.** Большинство систем, которые я поддерживаю, закрыты. Среди них агрегатор
+новостей с редакционной модерацией, Telegram-секретарь со связью с задачами и
+таблицами, ассистент для финансовых исследований и автоматизация публикаций в
+соцсетях.
 
-1. Define the product outcome and acceptance conditions.
-2. Split the work into bounded tasks with explicit context.
-3. Keep instructions, state, and decisions in the repository.
-4. Verify results with tests, diffs, logs, and human review where judgment
-   matters.
-5. Ship, observe, and improve the system from real feedback.
+## How I work / Как я работаю
 
-## Tools and workflow
+1. **EN.** Define the product outcome and acceptance conditions.<br>
+   **RU.** Определяю результат для продукта и условия приемки.
+2. **EN.** Split the work into bounded tasks with explicit context.<br>
+   **RU.** Делю работу на ограниченные задачи с явным контекстом.
+3. **EN.** Keep instructions, state, and decisions in the repository.<br>
+   **RU.** Храню инструкции, состояние и решения в репозитории.
+4. **EN.** Verify the result with tests, diffs, logs, and human review where
+   judgment matters.<br>
+   **RU.** Проверяю результат тестами, дифами, логами и человеком там, где
+   требуется профессиональное суждение.
+5. **EN.** Ship, observe, and improve from real feedback.<br>
+   **RU.** Выпускаю продукт, наблюдаю за его работой и улучшаю по реальной
+   обратной связи.
 
-- **Agent systems:** Codex, Claude Code, custom skills and agents,
-  repository-level instructions, spec-driven delivery
-- **Product systems:** Python, TypeScript/Node.js, Docker Compose, PostgreSQL,
-  Redis, Telegram APIs, VPS deployment and operations
-- **Quality:** automated tests, acceptance checks, observable state, reversible
-  changes, focused human checkpoints
-- **Editorial product:** research, information architecture, writing systems,
-  SEO/GEO, distribution, and audience feedback
+## Tools / Инструменты
 
-## Current focus
+| Area | What I use | Что использую |
+| --- | --- | --- |
+| AI workflow / Агентные процессы | Codex, Claude Code, custom skills and agents, repository-level instructions | Codex, Claude Code, собственные скиллы и агенты, инструкции в репозитории |
+| Engineering / Разработка | Python, TypeScript/Node.js, Docker Compose, PostgreSQL, Redis, Telegram APIs, VPS operations | Python, TypeScript/Node.js, Docker Compose, PostgreSQL, Redis, Telegram API, поддержка VPS |
+| Quality / Качество | automated tests, acceptance checks, observable state, reversible changes, focused human review | автоматические тесты, проверки приемки, наблюдаемое состояние, обратимые изменения, точечная проверка человеком |
+| Editorial product / Редакционный продукт | research, information architecture, writing systems, SEO/GEO, distribution, audience feedback | исследование, информационная архитектура, система работы с текстом, SEO/GEO, дистрибуция, обратная связь от аудитории |
 
-- reliable harnesses for long-running agent work;
-- cross-project memory and context management;
-- production reliability for AI-assisted products;
-- systems where product, editorial quality, and distribution meet.
+## Background / Опыт
 
-## Background
-
-I am also the editor-in-chief of
+**EN.** I am the editor-in-chief of
 [Neuromedia](https://neiro.unisender.com/), Unisender's publication about
 practical AI in marketing and digital work. Editorial leadership and product
 marketing shape how I frame problems, judge quality, and design feedback loops.
 
-You can find me on [GitHub](https://github.com/mikeshu2001) or
-[Telegram](https://t.me/misha_davai_po_novoi).
+**RU.** Я главный редактор
+[Нейромедиа](https://neiro.unisender.com/) — издания Unisender о практическом
+применении ИИ в маркетинге и цифровой работе. Редакторский опыт и продуктовый
+маркетинг помогают мне формулировать задачи, оценивать качество и строить
+обратную связь.
+
+[Telegram](https://t.me/misha_davai_po_novoi)
